@@ -4,15 +4,16 @@
 }
 
 :root {
+    --primary-color: #0A1128;
+    --white-color: #FFF;
+    --gap: 3rem;
     font-size: 62.5%;
 }
 
 body {
-    background-image: url(../images/main-bg.svg);
-    background-size: cover;
-    background-position: center center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -42,4 +43,25 @@ h5 {
 
 h6 {
     font-size: 3.5rem; 
+}
+
+.main-bg {
+    background-image: url(../images/main-bg.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg {
+    background-color: var(--white-color);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;
 }
