@@ -35,7 +35,11 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem; 
+    font-size: 5.5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: initial; 
 }
 
 h3 {
@@ -68,6 +72,7 @@ h6 {
 
 .white-bg {
     background-color: var(--white-color);
+    color: var(--primary-color);
 }
 
 .main-content {
@@ -147,16 +152,23 @@ h6 {
     height: calc(100vh - var(--nav-height));
 }
 
-.intro-text h2 {
-    margin-bottom: 5rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: initial;
-}
-
 .intro-img img {
     max-width: 100%;
     height: auto;
+}
+
+.about-content {
+    height: 100vh;
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content p {
+    margin: 2rem;
 }
 
 
