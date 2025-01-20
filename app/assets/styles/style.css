@@ -171,8 +171,28 @@ h6 {
     margin: 2rem;
 }
 
+.about-grid {
+    display: flex;
+    align-items: center;
+}
 
+.about-grid-content>p {
+    margin-bottom: calc(var(--gap) * 2);
+    margin-top: var(--gap);
+}
 
+.grid-content {
+    display: grid;
+    max-height: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--gap);
+}
+
+.grid-content h3 {
+    font-size: 3rem;
+    font-style: italic;
+    transform: rotate(5deg)
+}
 
 
 
