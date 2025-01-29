@@ -194,6 +194,39 @@ h6 {
     transform: rotate(5deg)
 }
 
+.gallery {
+    padding-bottom: var(--nav-height);
+}
+
+.gallery h2 {
+    margin-top: var(--nav-height);
+}
+
+.gallery-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--gap);
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 36rem;
+    height: 100%;
+    max-height: 36rem;
+    overflow: hidden;
+}
+
+.gallery-content img {
+    max-height: 36rem;
+    max-width: 36rem;
+    aspect-ratio: 1 / 1;
+    transition: all 200ms ease-in-out;
+}
+
+.gallery-content img:hover {
+    transform: translate(-3%, 3%) scale(1.1) rotate(3deg);
+}
 
 
 
